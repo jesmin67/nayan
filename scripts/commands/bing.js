@@ -28,7 +28,7 @@ start: async function({ nayan, events, args, lang}) {
   const n = apis.data.bing
     if(!prompt) return nayan.reply(lang('missing'), events.threadID, events.messageID)
 
-  const rndm = ['cookie'] // input your cookie hare
+  const rndm = ['1v6wgQIM4mAgTVr_0C5eTNGXZbxdLp7XwksElTirHs8nP6S3BpOWeZyhqAAugxA3Kz6nu_xVk77M5O9kWCHaabeCJocKSkRz0HfkLhg9jgt0pNWM_ZUBnYUJy1PJbEy-bWd4I7FAGc5vUMFgrBMl6Qlr114l9lhagkJwibDCX9zyKqYmi0mmP8QJdrxZw6T-FAyRubmBPlRhRI8eDjFJWpT51vgJBj2hCTXQ8XuqIyP8'] // input your cookie hare
 
   var cookie = rndm[Math.floor(Math.random() * rndm.length)];
 
@@ -51,7 +51,7 @@ start: async function({ nayan, events, args, lang}) {
 
     nayan.reply({
         attachment: imgData,
-        body: "🔍Bing Search Result🔍\n\n📝Prompt: " + prompt + "\n\n#️⃣Number of Images: " + numberSearch
+        body: "ðŸ”Bing Search ResultðŸ”\n\nðŸ“Prompt: " + prompt + "\n\n#ï¸âƒ£Number of Images: " + numberSearch
     }, events.threadID, events.messageID)
     for (let ii = 1; ii < parseInt(numberSearch); ii++) {
         fs.unlinkSync(__dirname + `/cache/${ii}.jpg`)
